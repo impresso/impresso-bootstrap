@@ -5,7 +5,15 @@
       <a href="/">
       <img id="logo" src="./assets/impresso-logo/impresso-logo-h-RGB.png" height="45px" class="d-inline-block align-top" alt="">
       </a>
-      <span class="navbar-brand">impresso-bootstrap</span>
+      <span class="navbar-brand">
+        <a href="https://github.com/impresso/impresso-bootstrap" class="fa-github">
+          <icon name="github"></icon>
+        </a>
+        <a href="http://impresso-project.ch/">
+          <icon name="link"></icon>
+        </a>
+        impresso-bootstrap
+      </span>
     </div>
   </nav>
   <div class="container">
@@ -113,8 +121,17 @@
 </template>
 
 <script>
+import Vue from 'vue';
+import 'vue-awesome/icons/github';
+import 'vue-awesome/icons/link';
+
+import Icon from 'vue-awesome/components/Icon';
+
 export default {
   name: 'app',
+  components: {
+    Icon,
+  },
 };
 </script>
 
@@ -127,6 +144,36 @@ export default {
 
     #logo {
         margin: -3px 0;
+    }
+
+    .navbar-brand{
+      $darkicon: rgba(0,0,0,.8);
+
+      a{
+        border: 2px solid $darkicon;
+        transition: all 300ms;
+        margin-right: 7px;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background: $darkicon;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 0;
+        color:white;
+        &:hover{
+          background: none;
+          color: $darkicon;
+        }
+        svg{
+          margin-top: 20%;
+        }
+        &.fa-github{
+          svg{
+            transform: scale(1.5);
+          }
+        }
+      }
     }
 }
 </style>
