@@ -11,7 +11,6 @@
              @dismissed="showDismissibleAlert=false">
       Dismissible Alert!
     </b-alert>
-
     <b-alert :show="dismissCountDown"
              dismissible
              variant="warning"
