@@ -121,7 +121,7 @@
 </template>
 
 <script>
-import Vue from 'vue';
+// import Vue from 'vue';
 import 'vue-awesome/icons/github';
 import 'vue-awesome/icons/link';
 
@@ -167,6 +167,7 @@ export default {
         }
         svg{
           margin-top: 20%;
+          width: 100%;
         }
         &.fa-github{
           svg{

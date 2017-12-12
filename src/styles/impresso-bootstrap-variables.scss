@@ -1,2 +1,14 @@
 // read this: https://getbootstrap.com/docs/4.0/getting-started/theming/
 // define variables, see node_modules/scss/_variables.scss
+
+// Settings for the `<body>` element.
+$body-bg: #F2F2F2;
+$body-color: #343a40; // styles
+
+// Override fonts
+$font-family-sans-serif: 'Lato', sans-serif;
+$font-family-serif: "Playfair Display", serif;
+$font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base: $font-family-sans-serif;
+
+$headings-font-family: $font-family-serif;
