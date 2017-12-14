@@ -29,6 +29,7 @@
     <b-btn @click="showDismissibleAlert=true" variant="info" class="m-1">
       Show dismissible alert ({{showDismissibleAlert?'visible':'hidden'}})
     </b-btn>
+
     <hr>
     <h1>Bootstrap 4 Classes</h1>
     <div class="alert alert-primary" role="alert">

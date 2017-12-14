@@ -3,6 +3,8 @@ import Router from 'vue-router';
 // import Home from '@/components/Home';
 import ComponentsAlerts from '@/components/components/Alerts';
 import ComponentsBadge from '@/components/components/Badge';
+import ComponentsCollapse from '@/components/components/Collapse';
+import ContentTypography from '@/components/content/Typography';
 
 Vue.use(Router);
 
@@ -24,7 +26,7 @@ export default new Router({
     },
     {
       path: '/content/typography',
-      // component: ContentTypography,
+      component: ContentTypography,
     },
     {
       path: '/content/code',
@@ -72,7 +74,7 @@ export default new Router({
     },
     {
       path: '/components/collapse',
-      // component: ComponentsCollapse,
+      component: ComponentsCollapse,
     },
     {
       path: '/components/dropdowns',
