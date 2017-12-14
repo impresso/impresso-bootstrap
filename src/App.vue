@@ -121,7 +121,6 @@
 </template>
 
 <script>
-import Vue from 'vue';
 import 'vue-awesome/icons/github';
 import 'vue-awesome/icons/link';
 
