@@ -166,6 +166,7 @@ export default {
         }
         svg{
           margin-top: 20%;
+          width: 100%;
         }
         &.fa-github{
           svg{

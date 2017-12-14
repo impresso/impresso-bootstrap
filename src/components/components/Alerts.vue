@@ -4,14 +4,12 @@
     <b-alert show>Default Alert</b-alert>
 
     <b-alert variant="success" show>Success Alert</b-alert>
-
     <b-alert variant="danger"
              dismissible
              :show="showDismissibleAlert"
              @dismissed="showDismissibleAlert=false">
       Dismissible Alert!
     </b-alert>
-
     <b-alert :show="dismissCountDown"
              dismissible
              variant="warning"

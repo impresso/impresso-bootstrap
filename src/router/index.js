@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 // import Home from '@/components/Home';
 import ComponentsAlerts from '@/components/components/Alerts';
+import ComponentsBadge from '@/components/components/Badge';
 
 Vue.use(Router);
 
@@ -47,7 +48,7 @@ export default new Router({
     },
     {
       path: '/components/badge',
-      // component: ComponentsBadge,
+      component: ComponentsBadge,
     },
     {
       path: '/components/breadcrumb',
