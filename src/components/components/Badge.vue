@@ -8,6 +8,6 @@ export default {};
 
 <style scoped lang="scss">
 h1 {
-    color: orange;
+    color: green;
 }
 </style>
