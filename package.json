@@ -11,7 +11,7 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-    "build": "node build/build.js",
+    "build": "npm run css && node build/build.js",
     "css": "npm-run-all --parallel css-lint css-compile --sequential css-minify",
     "css-lint": "stylelint --config build/.stylelintrc --syntax scss \"src/styles/**/*.scss\"",
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/styles/impresso-bootstrap.scss dist/css/bootstrap.css",
