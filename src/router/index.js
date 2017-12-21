@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-// import Home from '@/components/Home';
+import Home from '@/components/Home';
 import ComponentsAlerts from '@/components/components/Alerts';
 import ComponentsBadge from '@/components/components/Badge';
 import ComponentsCollapse from '@/components/components/Collapse';
@@ -13,8 +13,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/components/alerts',
-      component: ComponentsAlerts,
+      redirect: '/home',
+    },
+    {
+      path: '/home',
+//      redirect: '/home',
+      component: Home,
     },
     {
       path: '/layout/grid',
