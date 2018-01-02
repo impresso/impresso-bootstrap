@@ -5,6 +5,7 @@ import ComponentsAlerts from '@/components/components/Alerts';
 import ComponentsBadge from '@/components/components/Badge';
 import ComponentsCollapse from '@/components/components/Collapse';
 import ContentTypography from '@/components/content/Typography';
+import Overview from '@/components/Overview';
 
 Vue.use(Router);
 
@@ -13,8 +14,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/components/alerts',
-      component: ComponentsAlerts,
+      redirect: '/overview',
+      component: Overview,
+    },
+    {
+      path: '/overview',
+      component: Overview,
     },
     {
       path: '/layout/grid',

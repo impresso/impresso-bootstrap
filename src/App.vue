@@ -19,6 +19,11 @@
   <div class="container">
     <div class="row">
       <div class="col-3">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <router-link class="nav-link" to="/overview">Overview</router-link>
+          </li>
+        </ul>
         <h4>Layout</h4>
         <ul class="nav nav-pills flex-column">
           <li class="nav-item">
