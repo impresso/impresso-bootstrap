@@ -307,12 +307,16 @@ export default {
 
 <style scoped lang="scss">
 section {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 section:first-child {
     border-top: 1px solid #ccc;
     padding-top: 10px;
+}
+h6 {
+    text-align:right;
+    padding: .5em 0;
 }
 </style>

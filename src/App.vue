@@ -3,7 +3,7 @@
   <nav class="navbar navbar-light bg-light">
     <div class="container">
       <a href="/">
-      <img id="logo" src="./assets/impresso-logo/impresso-logo-h-RGB.png" height="45px" class="d-inline-block align-top" alt="">
+      <img id="logo" src="./assets/impresso-logo/impresso-logo-h-RGB@2x.png" height="45px" class="d-inline-block align-top" alt="">
       </a>
       <span class="navbar-brand">
         <a href="https://github.com/impresso/impresso-bootstrap" class="fa-github">
@@ -19,14 +19,10 @@
   <div class="container">
     <div class="row">
       <div class="col-3">
-        <ul class="nav nav-pills flex-column">
-          <li class="nav-item">
-            <router-link class="nav-link" to="/overview">Overview</router-link>
-          </li>
-        </ul>
         <h4>Layout</h4>
         <ul class="nav nav-pills flex-column">
           <li class="nav-item">
+            <router-link class="nav-link" to="/overview">Overview</router-link>
             <router-link class="nav-link" to="/layout/grid">Grid</router-link>
             <router-link class="nav-link" to="/layout/media-object">Media object</router-link>
           </li>
@@ -148,6 +144,7 @@ export default {
 
     #logo {
         margin: -3px 0;
+        mix-blend-mode: multiply;
     }
 
     .navbar-brand{
