@@ -167,8 +167,8 @@
       <section>
       <h6>Buttons</h6>
 
-      <b-row v-for="variant in ['primary','secondary','success','outline-success','warning','danger','link']">
-          <b-col v-for="size in ['sm','','lg']" style="margin:.2em 0">
+      <b-row v-for="variant in ['primary','secondary','success','outline-success','warning','danger','link']" v-bind:key="variant">
+          <b-col v-for="size in ['sm','','lg']" style="margin:.2em 0" v-bind:key="size">
             <b-button :size="size" :variant="variant">
               {{variant}} {{size}}
             </b-button>
@@ -267,56 +267,61 @@ export default {
       values: [15, 30, 20],
       items: [{
         text: 'Admin',
-        href: '#'
-      }, {
+        href: '#',
+      },
+      {
         text: 'Manage',
-        href: '#'
-      }, {
+        href: '#',
+      },
+      {
         text: 'Library',
-        active: true
-      }],
-      tableItems: [{
-          isActive: true,
-          age: 40,
-          first_name: 'Dickerson',
-          last_name: 'Macdonald'
-        },
-        {
-          isActive: false,
-          age: 21,
-          first_name: 'Larsen',
-          last_name: 'Shaw'
-        },
-        {
-          isActive: false,
-          age: 89,
-          first_name: 'Geneva',
-          last_name: 'Wilson'
-        },
-        {
-          isActive: true,
-          age: 38,
-          first_name: 'Jami',
-          last_name: 'Carney'
-        }
+        active: true,
+      },
       ],
-    }
-  }
-}
+      tableItems: [{
+        isActive: true,
+        age: 40,
+        first_name: 'Dickerson',
+        last_name: 'Macdonald',
+      },
+      {
+        isActive: false,
+        age: 21,
+        first_name: 'Larsen',
+        last_name: 'Shaw',
+      },
+      {
+        isActive: false,
+        age: 89,
+        first_name: 'Geneva',
+        last_name: 'Wilson',
+      },
+      {
+        isActive: true,
+        age: 38,
+        first_name: 'Jami',
+        last_name: 'Carney',
+      },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped lang="scss">
-section {
+  section {
     margin-bottom: 10px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 30px;
-}
-section:first-child {
+  }
+
+  section:first-child {
     border-top: 1px solid #ccc;
     padding-top: 10px;
-}
-h6 {
-    text-align:right;
-    padding: .5em 0;
-}
+  }
+
+  h6 {
+    text-align: right;
+    padding: 0.5em 0;
+  }
 </style>
