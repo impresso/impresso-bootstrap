@@ -43,7 +43,7 @@
               </b-dropdown>
               </b-form-group>
               <b-form-group label="Outline input">
-                <b-dropdown id="ddown2" text="Dropdown Button" variant="outline-success">
+                <b-dropdown id="ddown2" text="Dropdown Button">
                   <b-dropdown-header>Dropdown header</b-dropdown-header>
                   <b-dropdown-item>First Action</b-dropdown-item>
                   <b-dropdown-item>Second Action</b-dropdown-item>

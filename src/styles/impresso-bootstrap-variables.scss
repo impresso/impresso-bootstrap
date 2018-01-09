@@ -3,7 +3,7 @@
 
 //  Colors
 // $body-bg: #f40;
-
+/*
 $primary:       rgb(20,140,160) !default;
 $secondary:     rgb(250,180,0) !default;
 $success:       rgb(20,140,160) !default;
@@ -12,6 +12,15 @@ $warning:       rgb(240,130,0) !default;
 $danger:        rgb(240,100,0) !default;
 $light:         rgb(120,190,190) !default;
 $dark:          rgb(15,120,140) !default;
+*/
+$primary:       #222 !default;
+$secondary:     black !default;
+$success:       rgb(20,140,160) !default;
+$info:          rgb(120,190,190) !default;
+$warning:       rgb(240,130,0) !default;
+$danger:        rgb(240,100,0) !default;
+$light:         #eee !default;
+$dark:          #222 !default;
 
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
@@ -25,22 +34,36 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-$link-color: rgb(8,56,132);
+$link-color: #f40 /*rgb(8,56,132)*/;
 
-$font-family-sans-serif: "Lato";
+
+*:focus { outline: none; }
+$input-focus-border-color: $primary;
+::selection {
+    background: rgba(0,0,0,0.1);
+}
+
+
+$font-family-sans-serif: "Helvetica Neue", HelveticaNeue, Helvetica, Sans, Arial /*"Lato"*/;
 $headings-font-family: $font-family-sans-serif;
-$font-family-base: "Playfair Display";
+$font-family-base: $font-family-sans-serif /*"Playfair Display"*/;
 
 $headings-color: $primary;
-$border-radius: .175rem;
+$border-radius: 0;
 
 
+// Badges
 
-.pagination,
+$badge-font-size:                   85% !default;
+$badge-font-weight:                 600;
+$badge-padding-y:                   .5em !default;
+$badge-padding-x:                   .5em !default;
 .badge {
   font-family: $font-family-sans-serif;
-  font-weight: normal;
 }
+
+.pagination,
+
 .btn.dropdown-toggle-split { border-left-color: rgba(255,255,255,0.5); }
 
 
