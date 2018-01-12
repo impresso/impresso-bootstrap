@@ -135,6 +135,14 @@
             label-for="rangeS">
             <b-form-input type="range" id="rangeS" />
           </b-form-group>
+          <b-form-group
+            horizontal
+            label="Vue slider:"
+            label-class="text-sm-right"
+            label-for="vSlider">
+            <vue-slider v-model="sliderValue" id="vSlider"></vue-slider>
+            <components-slider v-model="sliderValue" id="vSlider"></components-slider>
+          </b-form-group>
         </b-form-group>
         <b-form-group>
           <b-input-group left="@">
@@ -260,9 +268,12 @@
 </template>
 
 <script>
+
 export default {
+
   data() {
     return {
+      sliderValue: [2, 7],
       max: 100,
       values: [15, 30, 20],
       items: [{

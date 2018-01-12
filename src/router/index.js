@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 // import Home from '@/components/Home';
+import ComponentsSlider from '@/components/components/Slider';
 import ComponentsAlerts from '@/components/components/Alerts';
 import ComponentsBadge from '@/components/components/Badge';
 import ComponentsCollapse from '@/components/components/Collapse';
@@ -48,6 +49,10 @@ export default new Router({
     {
       path: '/content/figures',
       // component: ContentFigures,
+    },
+    {
+      path: '/components/slider',
+      component: ComponentsSlider,
     },
     {
       path: '/components/alerts',

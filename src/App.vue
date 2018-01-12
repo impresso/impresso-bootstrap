@@ -48,6 +48,9 @@
         <h4>Components</h4>
         <ul class="nav nav-pills flex-column">
           <li class="nav-item">
+            <router-link class="nav-link" to="/components/slider">Slider</router-link>
+          </li>
+          <li class="nav-item">
             <router-link class="nav-link" to="/components/alerts">Alerts</router-link>
           </li>
           <li class="nav-item">
