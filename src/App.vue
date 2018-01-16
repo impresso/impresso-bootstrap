@@ -45,11 +45,17 @@
             <router-link class="nav-link" to="/content/figures">Figures</router-link>
           </li>
         </ul>
-        <h4>Components</h4>
+        <h4>Custom Components</h4>
         <ul class="nav nav-pills flex-column">
           <li class="nav-item">
-            <router-link class="nav-link" to="/components/slider">Slider</router-link>
+            <router-link class="nav-link" v-bind:to="{name: 'FilterBox'}">Filterbox</router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" v-bind:to="{name: 'CustomSlider'}">Slider</router-link>
+          </li>
+        </ul>
+        <h4>Components</h4>
+        <ul class="nav nav-pills flex-column">
           <li class="nav-item">
             <router-link class="nav-link" to="/components/alerts">Alerts</router-link>
           </li>

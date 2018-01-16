@@ -3,6 +3,7 @@
 
 //  Colors
 // $body-bg: #f40;
+
 /*
 $primary:       rgb(20,140,160) !default;
 $secondary:     rgb(250,180,0) !default;
@@ -13,7 +14,7 @@ $danger:        rgb(240,100,0) !default;
 $light:         rgb(120,190,190) !default;
 $dark:          rgb(15,120,140) !default;
 */
-$primary:       #222 !default;
+$primary:       #FFDB58 !default;
 $secondary:     black !default;
 $success:       rgb(20,140,160) !default;
 $info:          rgb(120,190,190) !default;
@@ -34,23 +35,21 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-$link-color: #f40 /*rgb(8,56,132)*/;
+$link-color: rgb(17,100,121);
 
 
 *:focus { outline: none; }
 $input-focus-border-color: $primary;
-::selection {
+*::selection {
     background: rgba(0,0,0,0.1);
 }
 
-
-$font-family-sans-serif: "Helvetica Neue", HelveticaNeue, Helvetica, Sans, Arial /*"Lato"*/;
+$font-family-sans-serif: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Sans", "Arial" /*"Lato"*/;
 $headings-font-family: $font-family-sans-serif;
 $font-family-base: $font-family-sans-serif /*"Playfair Display"*/;
 
 $headings-color: $primary;
 $border-radius: 0;
-
 
 // Badges
 
@@ -58,144 +57,9 @@ $badge-font-size:                   85% !default;
 $badge-font-weight:                 600;
 $badge-padding-y:                   .5em !default;
 $badge-padding-x:                   .5em !default;
+
 .badge {
   font-family: $font-family-sans-serif;
 }
 
-.pagination,
-
-.btn.dropdown-toggle-split { border-left-color: rgba(255,255,255,0.5); }
-
-
-
-
-
-
-
-
-// Styling Cross-Browser Compatible Range Inputs with Sass
-// Github: https://github.com/darlanrod/input-range-sass
-// Author: Darlan Rod https://github.com/darlanrod
-// Version 1.4.1
-// MIT License
-
-$track-color: $gray-200 !default;
-$thumb-color: $primary !default;
-
-$thumb-radius: 10px !default;
-$thumb-height: 20px !default;
-$thumb-width: 20px !default;
-$thumb-shadow-size: 0 !default;
-$thumb-shadow-blur: 0 !default;
-$thumb-shadow-color: rgba(0, 0, 0, .2) !default;
-$thumb-border-width: 0 !default;
-$thumb-border-color: #eceff1 !default;
-
-$track-width: 100% !default;
-$track-height: 6px !default;
-$track-shadow-size: 0 !default;
-$track-shadow-blur: 0 !default;
-$track-shadow-color: rgba(0, 0, 0, .2) !default;
-$track-border-width: 0 !default;
-$track-border-color: #cfd8dc !default;
-
-$track-radius: 5px !default;
-$contrast: 0% !default;
-
-@mixin shadow($shadow-size, $shadow-blur, $shadow-color) {
-  box-shadow: $shadow-size $shadow-size $shadow-blur $shadow-color, 0 0 $shadow-size lighten($shadow-color, 5%);
-}
-
-@mixin track {
-  cursor: pointer;
-  height: $track-height;
-  transition: all .2s ease;
-  width: $track-width;
-}
-
-@mixin thumb {
-  @include shadow($thumb-shadow-size, $thumb-shadow-blur, $thumb-shadow-color);
-  background: $thumb-color;
-  border: $thumb-border-width solid $thumb-border-color;
-  border-radius: $thumb-radius;
-  cursor: pointer;
-  height: $thumb-height;
-  width: $thumb-width;
-}
-
-[type='range'] {
-  -webkit-appearance: none;
-  margin: $thumb-height / 5 0;
-  width: $track-width;
-  border: 0;
-
-
-  &:focus {
-    outline: 0;
-
-    &::-webkit-slider-runnable-track {
-      background: lighten($track-color, $contrast);
-    }
-
-    &::-ms-fill-lower {
-      background: $track-color;
-    }
-
-    &::-ms-fill-upper {
-      background: lighten($track-color, $contrast);
-    }
-  }
-
-  &::-webkit-slider-runnable-track {
-    @include track;
-    @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
-    background: $track-color;
-    border: $track-border-width solid $track-border-color;
-    border-radius: $track-radius;
-  }
-
-  &::-webkit-slider-thumb {
-    @include thumb;
-    -webkit-appearance: none;
-    margin-top: ((-$track-border-width * 2 + $track-height) / 2) - ($thumb-height / 2);
-  }
-
-  &::-moz-range-track {
-    @include track;
-    @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
-    background: $track-color;
-    border: $track-border-width solid $track-border-color;
-    border-radius: $track-radius;
-  }
-
-  &::-moz-range-thumb {
-    @include thumb;
-  }
-
-  &::-ms-track {
-    @include track;
-    background: transparent;
-    border-color: transparent;
-    border-width: ($thumb-height / 2) 0;
-    color: transparent;
-  }
-
-  &::-ms-fill-lower {
-    @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
-    background: darken($track-color, $contrast);
-    border: $track-border-width solid $track-border-color;
-    border-radius: $track-radius * 2;
-  }
-
-  &::-ms-fill-upper {
-    @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
-    background: $track-color;
-    border: $track-border-width solid $track-border-color;
-    border-radius: $track-radius * 2;
-  }
-
-  &::-ms-thumb {
-    @include thumb;
-    margin-top: 0;
-  }
-}
+.pagination, .btn.dropdown-toggle-split { border-left-color: rgba(255,255,255,.5); }
