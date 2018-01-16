@@ -4,14 +4,12 @@
     <b-alert show>Default Alert</b-alert>
 
     <b-alert variant="success" show>Success Alert</b-alert>
-
     <b-alert variant="danger"
              dismissible
              :show="showDismissibleAlert"
              @dismissed="showDismissibleAlert=false">
       Dismissible Alert!
     </b-alert>
-
     <b-alert :show="dismissCountDown"
              dismissible
              variant="warning"
@@ -31,6 +29,7 @@
     <b-btn @click="showDismissibleAlert=true" variant="info" class="m-1">
       Show dismissible alert ({{showDismissibleAlert?'visible':'hidden'}})
     </b-btn>
+
     <hr>
     <h1>Bootstrap 4 Classes</h1>
     <div class="alert alert-primary" role="alert">

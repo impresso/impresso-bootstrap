@@ -1,7 +1,12 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 // import Home from '@/components/Home';
+import ComponentsSlider from '@/components/components/Slider';
 import ComponentsAlerts from '@/components/components/Alerts';
+import ComponentsBadge from '@/components/components/Badge';
+import ComponentsCollapse from '@/components/components/Collapse';
+import ContentTypography from '@/components/content/Typography';
+import Overview from '@/components/Overview';
 
 Vue.use(Router);
 
@@ -10,8 +15,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/components/alerts',
-      component: ComponentsAlerts,
+      redirect: '/overview',
+      component: Overview,
+    },
+    {
+      path: '/overview',
+      component: Overview,
     },
     {
       path: '/layout/grid',
@@ -23,7 +32,7 @@ export default new Router({
     },
     {
       path: '/content/typography',
-      // component: ContentTypography,
+      component: ContentTypography,
     },
     {
       path: '/content/code',
@@ -42,12 +51,16 @@ export default new Router({
       // component: ContentFigures,
     },
     {
+      path: '/components/slider',
+      component: ComponentsSlider,
+    },
+    {
       path: '/components/alerts',
       component: ComponentsAlerts,
     },
     {
       path: '/components/badge',
-      // component: ComponentsBadge,
+      component: ComponentsBadge,
     },
     {
       path: '/components/breadcrumb',
@@ -71,7 +84,7 @@ export default new Router({
     },
     {
       path: '/components/collapse',
-      // component: ComponentsCollapse,
+      component: ComponentsCollapse,
     },
     {
       path: '/components/dropdowns',
