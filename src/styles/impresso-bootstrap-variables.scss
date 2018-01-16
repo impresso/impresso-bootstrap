@@ -2,91 +2,200 @@
 // define variables, see node_modules/scss/_variables.scss
 
 //  Colors
-$body-bg: #f8f9fa;
-$body-color: #343a40; // styles
-$primary: #ffce00; // $secondary:     $gray-600;
-// $success:       $green;
-// $info:          $cyan;
-// $warning:       $yellow;
-// $danger:        $red;
-// $light:         $gray-100;
-// $dark:          $gray-800;
-// Fonts
-$font-family-sans-serif: "Lato", sans-serif;
-$font-family-serif: "Playfair Display", serif;
-$font-family-monospace: menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
-$font-family-base: $font-family-sans-serif;
-$headings-font-family: $font-family-serif;
+// $body-bg: #f40;
+/*
+$primary:       rgb(20,140,160) !default;
+$secondary:     rgb(250,180,0) !default;
+$success:       rgb(20,140,160) !default;
+$info:          rgb(120,190,190) !default;
+$warning:       rgb(240,130,0) !default;
+$danger:        rgb(240,100,0) !default;
+$light:         rgb(120,190,190) !default;
+$dark:          rgb(15,120,140) !default;
+*/
+$primary:       #222 !default;
+$secondary:     black !default;
+$success:       rgb(20,140,160) !default;
+$info:          rgb(120,190,190) !default;
+$warning:       rgb(240,130,0) !default;
+$danger:        rgb(240,100,0) !default;
+$light:         #eee !default;
+$dark:          #222 !default;
 
-.dark {
-  background-color: rgb(124,124,124);
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$link-color: #f40 /*rgb(8,56,132)*/;
+
+
+*:focus { outline: none; }
+$input-focus-border-color: $primary;
+::selection {
+    background: rgba(0,0,0,0.1);
 }
 
-.padding {
-  padding: 0.2em;
-}
-// Collapsibles
-.collapseTitle {
-  width: 100%;
-  display: block;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  padding: 0.75em 0.6em 0.6em 0.8em;
-  margin-top: 0.2em;
-  border: none;
-  background-color: rgb(244,244,244);
-  color: rgba(0,0,0,0.65);
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  text-align: left;
-  font-size: 0.8rem;
-  transition-delay: all 0.4s;
-  transition: all 0.4s;
+
+$font-family-sans-serif: "Helvetica Neue", HelveticaNeue, Helvetica, Sans, Arial /*"Lato"*/;
+$headings-font-family: $font-family-sans-serif;
+$font-family-base: $font-family-sans-serif /*"Playfair Display"*/;
+
+$headings-color: $primary;
+$border-radius: 0;
+
+
+// Badges
+
+$badge-font-size:                   85% !default;
+$badge-font-weight:                 600;
+$badge-padding-y:                   .5em !default;
+$badge-padding-x:                   .5em !default;
+.badge {
+  font-family: $font-family-sans-serif;
 }
 
-.collapseTitle::after {
-  content: "\e316";
-  font-family: 'Material Icons';
-  font-size: 1.2rem;
-  position: relative;
-  top: -0.1em;
-  opacity: 0.8;
-  float: right;
-  transition: all 0.2s;
+.pagination,
+
+.btn.dropdown-toggle-split { border-left-color: rgba(255,255,255,0.5); }
+
+
+
+
+
+
+
+
+// Styling Cross-Browser Compatible Range Inputs with Sass
+// Github: https://github.com/darlanrod/input-range-sass
+// Author: Darlan Rod https://github.com/darlanrod
+// Version 1.4.1
+// MIT License
+
+$track-color: $gray-200 !default;
+$thumb-color: $primary !default;
+
+$thumb-radius: 10px !default;
+$thumb-height: 20px !default;
+$thumb-width: 20px !default;
+$thumb-shadow-size: 0 !default;
+$thumb-shadow-blur: 0 !default;
+$thumb-shadow-color: rgba(0, 0, 0, .2) !default;
+$thumb-border-width: 0 !default;
+$thumb-border-color: #eceff1 !default;
+
+$track-width: 100% !default;
+$track-height: 6px !default;
+$track-shadow-size: 0 !default;
+$track-shadow-blur: 0 !default;
+$track-shadow-color: rgba(0, 0, 0, .2) !default;
+$track-border-width: 0 !default;
+$track-border-color: #cfd8dc !default;
+
+$track-radius: 5px !default;
+$contrast: 0% !default;
+
+@mixin shadow($shadow-size, $shadow-blur, $shadow-color) {
+  box-shadow: $shadow-size $shadow-size $shadow-blur $shadow-color, 0 0 $shadow-size lighten($shadow-color, 5%);
 }
 
-.collapseTitle.collapsed {
-  border-radius: 0.2rem;
-  opacity: 0.7;
+@mixin track {
+  cursor: pointer;
+  height: $track-height;
+  transition: all .2s ease;
+  width: $track-width;
 }
 
-.collapseTitle.collapsed:after {
-  transform: rotate(180deg);
+@mixin thumb {
+  @include shadow($thumb-shadow-size, $thumb-shadow-blur, $thumb-shadow-color);
+  background: $thumb-color;
+  border: $thumb-border-width solid $thumb-border-color;
+  border-radius: $thumb-radius;
+  cursor: pointer;
+  height: $thumb-height;
+  width: $thumb-width;
 }
 
-.collapseTitle:active,
-.collapseTitle:focus,
-.collapseTitle:hover {
-  outline: 0;
-  opacity: 1;
-}
+[type='range'] {
+  -webkit-appearance: none;
+  margin: $thumb-height / 5 0;
+  width: $track-width;
+  border: 0;
 
-.card {
-  background-color: rgb(244,244,244);
-  border: none;
-  border-radius: 0 0 0.2em 0.2em;
-  margin-bottom: 0.2em;
-}
 
-.card-body {
-  font-family: Lato;
-  color: rgba(0,0,0,0.8);
-  font-size: 0.9rem;
-  margin: 0.75em;
-  padding: 0;
-}
+  &:focus {
+    outline: 0;
 
-.collapsible {
-  margin: 0 0.2em;
+    &::-webkit-slider-runnable-track {
+      background: lighten($track-color, $contrast);
+    }
+
+    &::-ms-fill-lower {
+      background: $track-color;
+    }
+
+    &::-ms-fill-upper {
+      background: lighten($track-color, $contrast);
+    }
+  }
+
+  &::-webkit-slider-runnable-track {
+    @include track;
+    @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
+    background: $track-color;
+    border: $track-border-width solid $track-border-color;
+    border-radius: $track-radius;
+  }
+
+  &::-webkit-slider-thumb {
+    @include thumb;
+    -webkit-appearance: none;
+    margin-top: ((-$track-border-width * 2 + $track-height) / 2) - ($thumb-height / 2);
+  }
+
+  &::-moz-range-track {
+    @include track;
+    @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
+    background: $track-color;
+    border: $track-border-width solid $track-border-color;
+    border-radius: $track-radius;
+  }
+
+  &::-moz-range-thumb {
+    @include thumb;
+  }
+
+  &::-ms-track {
+    @include track;
+    background: transparent;
+    border-color: transparent;
+    border-width: ($thumb-height / 2) 0;
+    color: transparent;
+  }
+
+  &::-ms-fill-lower {
+    @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
+    background: darken($track-color, $contrast);
+    border: $track-border-width solid $track-border-color;
+    border-radius: $track-radius * 2;
+  }
+
+  &::-ms-fill-upper {
+    @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
+    background: $track-color;
+    border: $track-border-width solid $track-border-color;
+    border-radius: $track-radius * 2;
+  }
+
+  &::-ms-thumb {
+    @include thumb;
+    margin-top: 0;
+  }
 }
