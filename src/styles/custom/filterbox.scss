@@ -1,5 +1,5 @@
 .filterbox {
-  border: 0.2em solid $black;
+  border: 0.15em solid $black;
   margin-bottom: 1em;
 }
 .filterbox .box-header {
@@ -12,7 +12,7 @@
   float: left;
   width: calc(100% - 4em);
   height: 100%;
-  padding: .5em .4em 0 .4em;
+  padding: .5em 0 0 .5em;
   overflow: hidden;
 }
 .filterbox .box-header .box-title h4 {
@@ -46,7 +46,6 @@
   background-color: $danger;
 }
 .filterbox .box-body {
-  padding: .5em .4em;
 }
 
 .filterbox .contextmenu div:not(.dropdown-divider)
