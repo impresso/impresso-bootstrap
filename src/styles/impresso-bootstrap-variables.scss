@@ -17,8 +17,12 @@ $body-color: $dark;
 $font-family-sans-serif: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Sans", "Arial";
 
 // grid
-$border-radius: 0;
 $grid-gutter-width: 20px;
+
+// border radius
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
 
 // Badges
 $badge-font-size: 85%;
