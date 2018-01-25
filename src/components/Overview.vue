@@ -3,7 +3,10 @@
 
     <section>
     <h6>Input fields</h6>
-
+      <vue-slider
+        v-bind:min="1750"
+        v-bind:max="2000"
+        v-bind:value="[1800,1900]"></vue-slider>
       <b-row>
         <b-col>
             <b-form-group label="Input with value">
@@ -141,7 +144,6 @@
             label-class="text-sm-right"
             label-for="vSlider">
             <vue-slider v-model="sliderValue" id="vSlider"></vue-slider>
-            <components-slider v-model="sliderValue" id="vSlider"></components-slider>
           </b-form-group>
         </b-form-group>
         <b-form-group>
@@ -268,9 +270,12 @@
 </template>
 
 <script>
+import VueSlider from 'vue-slider-component';
 
 export default {
-
+  components: {
+    VueSlider,
+  },
   data() {
     return {
       sliderValue: [2, 7],

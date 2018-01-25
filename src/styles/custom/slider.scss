@@ -1,0 +1,13 @@
+.vue-slider-component .vue-slider-dot {
+  background-color: $black;
+  border: .16em solid $white;
+  box-shadow: none;
+}
+.vue-slider-component .vue-slider-process {
+  background-color: $primary;
+}
+.vue-slider-component .vue-slider-tooltip{
+  background-color: $black;
+  border-color: $black;
+  border-radius: $border-radius;
+}
