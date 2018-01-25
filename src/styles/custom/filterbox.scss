@@ -1,0 +1,54 @@
+.filterbox {
+  border: 0.15em solid $black;
+  margin-bottom: 1em;
+}
+.filterbox .box-header {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid $black;
+  height:2em;
+}
+.filterbox .box-header .box-title {
+  float: left;
+  width: calc(100% - 4em);
+  height: 100%;
+  padding: .5em 0 0 .5em;
+  overflow: hidden;
+}
+.filterbox .box-header .box-title h4 {
+  width: calc(100% - 4em);
+  color: $black;
+  font-size: 1.0rem;
+  line-height: 1;
+}
+.filterbox .box-header .remove,
+.filterbox .box-header .contextmenu {
+  float: right;
+  border-left: 1px solid $black;
+  height: 100%;
+  width: 2em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: .9em auto;
+}
+
+.filterbox .box-header .contextmenu {
+  background-image: url(../assets/symbols/b-settings.svg);
+  background-size: 1.1em auto;
+}
+.filterbox .box-header .contextmenu:hover {
+  background-color: $primary;
+}
+.filterbox .box-header .remove {
+  background-image: url(../assets/symbols/b-close.svg);
+}
+.filterbox .box-header .remove:hover {
+  background-color: $danger;
+}
+.filterbox .box-body {
+}
+
+.filterbox .contextmenu div:not(.dropdown-divider)
+{
+  margin: 0.2rem 0.7rem;
+}

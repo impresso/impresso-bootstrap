@@ -1,7 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 // import Home from '@/components/Home';
-import ComponentsSlider from '@/components/components/Slider';
+import FilterBox from '@/components/custom/Filterbox';
+import CustomSlider from '@/components/custom/Slider';
 import ComponentsAlerts from '@/components/components/Alerts';
 import ComponentsBadge from '@/components/components/Badge';
 import ComponentsCollapse from '@/components/components/Collapse';
@@ -51,8 +52,14 @@ export default new Router({
       // component: ContentFigures,
     },
     {
-      path: '/components/slider',
-      component: ComponentsSlider,
+      path: '/custom/filterbox',
+      component: FilterBox,
+      name: 'FilterBox',
+    },
+    {
+      path: '/custom/slider',
+      component: CustomSlider,
+      name: 'CustomSlider',
     },
     {
       path: '/components/alerts',
