@@ -2,8 +2,8 @@
 // define variables, see node_modules/bootstrap/scss/_variables.scss
 
 //  Colors
-$primary: #193A47;
-$secondary: #345;
+$primary: black;
+$secondary: black;
 $success: rgb(20,140,160);
 $info: rgb(120,190,190);
 $warning: rgb(240,130,0);
@@ -11,9 +11,14 @@ $danger: rgb(240,100,0);
 $light: #eee;
 $dark: #222;
 
-$font-family-sans-serif: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Sans", "Arial";
 $body-color: $dark;
+
+// Fonts
+$font-family-sans-serif: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Sans", "Arial";
+
+// grid
 $border-radius: 0;
+$grid-gutter-width: 20px;
 
 // Badges
 $badge-font-size: 85%;
@@ -21,12 +26,9 @@ $badge-font-weight: 600;
 $badge-padding-y: 0.5em;
 $badge-padding-x: 0.5em;
 
-// grid
-$grid-gutter-width:   20px;
-
 // resets
 *::selection {
-  background: rgba(0, 0, 0, .1);
+  background: lighten($success, 50%);
 }
 
 *:focus { outline: none; }
