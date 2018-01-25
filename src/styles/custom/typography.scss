@@ -1,11 +1,13 @@
 .dropdown-menu {
-    border-color: $black;
-    box-shadow: 0.2em 0.2em 0 $black;
+  border-color: $black;
+  box-shadow: .2em .2em 0 $black;
 }
+
 .custom-select {
   border-color: $black;
 }
+
 .custom-select:focus {
   border-color: $black;
-  box-shadow: 0.2em 0.2em 0 $black;
+  box-shadow: .2em .2em 0 $black;
 }

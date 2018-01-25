@@ -2,8 +2,8 @@
 // define variables, see node_modules/bootstrap/scss/_variables.scss
 
 //  Colors
-$primary: black;
-$secondary: black;
+$primary: #000;
+$secondary: #000;
 $success: rgb(20,140,160);
 $info: rgb(120,190,190);
 $warning: rgb(240,130,0);
@@ -23,8 +23,8 @@ $grid-gutter-width: 20px;
 // Badges
 $badge-font-size: 85%;
 $badge-font-weight: 600;
-$badge-padding-y: 0.5em;
-$badge-padding-x: 0.5em;
+$badge-padding-y: .5em;
+$badge-padding-x: .5em;
 
 // resets
 *::selection {
