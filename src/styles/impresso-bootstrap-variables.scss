@@ -1,66 +1,32 @@
 // read this: https://getbootstrap.com/docs/4.0/getting-started/theming/
-// define variables, see node_modules/scss/_variables.scss
+// define variables, see node_modules/bootstrap/scss/_variables.scss
 
 //  Colors
-// $body-bg: #f40;
+$primary: #193A47;
+$secondary: #345;
+$success: rgb(20,140,160);
+$info: rgb(120,190,190);
+$warning: rgb(240,130,0);
+$danger: rgb(240,100,0);
+$light: #eee;
+$dark: #222;
 
-/*
-$primary:       rgb(20,140,160) !default;
-$secondary:     rgb(250,180,0) !default;
-$success:       rgb(20,140,160) !default;
-$info:          rgb(120,190,190) !default;
-$warning:       rgb(240,130,0) !default;
-$danger:        rgb(240,100,0) !default;
-$light:         rgb(120,190,190) !default;
-$dark:          rgb(15,120,140) !default;
-*/
-$primary:       #FFDB58 !default;
-$secondary:     #000 !default;
-$success:       rgb(20,140,160) !default;
-$info:          rgb(120,190,190) !default;
-$warning:       rgb(240,130,0) !default;
-$danger:        rgb(240,100,0) !default;
-$light:         #eee !default;
-$dark:          #222 !default;
+$font-family-sans-serif: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Sans", "Arial";
+$body-color: $dark;
+$border-radius: 0;
 
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
+// Badges
+$badge-font-size: 85%;
+$badge-font-weight: 600;
+$badge-padding-y: 0.5em;
+$badge-padding-x: 0.5em;
 
-$link-color: rgb(17,100,121);
+// grid
+$grid-gutter-width:   20px;
 
-
-*:focus { outline: none; }
-$input-focus-border-color: $primary;
-
+// resets
 *::selection {
   background: rgba(0, 0, 0, .1);
 }
 
-$font-family-sans-serif: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Sans", "Arial" /*"Lato"*/;
-$headings-font-family: $font-family-sans-serif;
-$font-family-base: $font-family-sans-serif /*"Playfair Display"*/;
-
-$headings-color: $primary;
-$border-radius: 0;
-
-// Badges
-
-$badge-font-size:                   85% !default;
-$badge-font-weight:                 600;
-$badge-padding-y:                   .5em !default;
-$badge-padding-x:                   .5em !default;
-
-.badge {
-  font-family: $font-family-sans-serif;
-}
-
-.pagination, .btn.dropdown-toggle-split { border-left-color: rgba(255,255,255,.5); }
+*:focus { outline: none; }
