@@ -3,7 +3,7 @@
   <nav class="navbar navbar-light bg-light">
     <div class="container">
       <a href="/">
-      <img id="logo" src="./assets/impresso-logo/impresso-logo-h-RGB@2x.png" height="45px" class="d-inline-block align-top" alt="">
+      <img id="logo" src="/static/impresso-logo/impresso-logo-h-RGB@2x.png" height="45px" class="d-inline-block align-top" alt="">
       </a>
       <span class="navbar-brand">
         <a href="https://github.com/impresso/impresso-bootstrap" class="fa-github">
