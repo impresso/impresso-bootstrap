@@ -1,11 +1,12 @@
 .filterbox {
-  border: 0.15em solid $black;
+  border: 0.2em solid $gray-300;
+  background: $white;
   margin-bottom: 1em;
 }
 .filterbox .box-header {
   float: left;
   width: 100%;
-  border-bottom: 1px solid $black;
+  border-bottom: 1px solid $gray-400;
   height:2em;
 }
 .filterbox .box-header .box-title {
@@ -17,14 +18,14 @@
 }
 .filterbox .box-header .box-title h4 {
   width: calc(100% - 4em);
-  color: $black;
+  color: $gray-700;
   font-size: 1.0rem;
   line-height: 1;
 }
 .filterbox .box-header .remove,
 .filterbox .box-header .contextmenu {
   float: right;
-  border-left: 1px solid $black;
+  border-left: 1px solid $gray-400;
   height: 100%;
   width: 2em;
   background-repeat: no-repeat;

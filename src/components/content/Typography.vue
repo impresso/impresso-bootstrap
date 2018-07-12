@@ -6,6 +6,13 @@
     <h4>h4. Bootstrap heading</h4>
     <h5>h5. Bootstrap heading</h5>
     <h6>h6. Bootstrap heading</h6>
+    <div class="">Basic text, no styles applied, it can be <strong>strong if it is more important</strong> or <em>italic to emphasize</em> but it should always be readable and friendly.</div>
+    <div class="smallcaps">
+      Smallcaps is used a lot throughout the interface.
+    </div>
+    <div class="">
+
+    </div>
   </div>
 </template>
 
@@ -13,5 +20,11 @@
 export default {};
 </script>
 
-<style lang="css">
+<style lang="scss">
+.smallcaps {
+  // color: $secondary;
+  font-variant: small-caps;
+  letter-spacing: 0.02em;
+  font-weight:400;
+}
 </style>

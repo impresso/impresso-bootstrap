@@ -2,15 +2,17 @@ h4, h6 {
   text-transform: uppercase;
   letter-spacing: .1rem;
 }
-
 .dropdown-menu {
-    border-color: $black;
-    box-shadow: 0.2em 0.2em 0 $black;
+    border-color: $gray-600;
+    box-shadow: 0.3em 0.3em 0 rgba(0,0,0,0.2);
+}
+.dropdown-divider {
+    border-color: $gray-500;
 }
 .custom-select {
-  border-color: $black;
+  border-color: $gray-600;
 }
 .custom-select:focus {
-  border-color: $black;
-  box-shadow: 0.2em 0.2em 0 $black;
+  border-color: $gray-600;
+  box-shadow: 0.3em 0.3em 0 rgba(0,0,0,0.2);
 }
