@@ -12,7 +12,7 @@
         <a href="http://impresso-project.ch/">
           <icon name="link"></icon>
         </a>
-        impresso-bootstrap
+        bootpresso
       </span>
     </div>
   </nav>
@@ -122,7 +122,7 @@
         </ul>
 
       </div>
-      <div class="col">
+      <div class="col documentation">
         <router-view/>
       </div>
     </div>
@@ -189,4 +189,4 @@ export default {
 }
 </style>
 
-<style src="./styles/impresso-bootstrap.scss" lang="scss"></style>
+<style src="./styles/bootpresso.sass" lang="sass"></style>

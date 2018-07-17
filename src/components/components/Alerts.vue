@@ -54,7 +54,7 @@
       This is a light alert—check it out!
     </div>
     <div class="alert alert-dark" role="alert">
-      This is a dark alert—check it out!
+      This is a dark alert—check it out!dfsdf
     </div>
   </div>
 </template>

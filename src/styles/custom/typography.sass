@@ -1,0 +1,99 @@
+%text-small-caps
+  // color: $clr-secondary
+  text-transform: uppercase
+  font-variant: small-caps
+  font-weight: 400
+  letter-spacing: .04rem
+  // font-family: $font-family-base
+  font-size: 12px
+
+
+body
+  // font-size: 12px
+
+a,
+u
+  text-decoration-color: $clr-quaternary
+  text-decoration-style: solid
+  // text-decoration: none
+  // box-shadow: inset 0 0px 0 $clr-bg-primary, inset 0 -1px 0 $clr-quaternary
+  transition: all 0.3s
+
+a:hover,
+u:hover
+  text-decoration-color: $clr-tertiary
+
+  // text-decoration-style: solid
+  // text-decoration: none
+  // box-shadow: inset 0 0px 0 $clr-bg-primary, inset 0 -2px 0 $clr-tertiary
+
+.serif
+  font-family: $font-family-serif
+
+.sans
+  font-family: $font-family-sans-serif
+
+.highlight
+  background: fade_out($clr-accent, 0.3)
+  outline: 1px solid $clr-accent
+  padding: 0 0.2em
+
+.txt-clr-primary
+  color: $clr-primary
+.txt-clr-secondary
+  color: $clr-secondary
+.txt-clr-tertiary
+  color: $clr-tertiary
+.txt-clr-quaternary
+  color: $clr-quaternary
+.txt-clr-accent
+  color: $clr-accent
+
+
+*:focus
+  outline: none
+*::selection
+  background: $clr-accent
+
+.custom-select
+  border-color: $clr-bg-secondary
+
+.custom-select:focus
+  border-color: $clr-bg-secondary
+  box-shadow: 0.3em 0.3em 0 rgba(0,0,0,0.2)
+
+
+.small-caps,
+label,
+legend
+  @extend %text-small-caps
+
+
+.heading-top
+  @extend %text-small-caps
+  font-weight: bold
+  color: $clr-tertiary
+  margin-bottom: 0.5em
+
+
+
+
+
+
+
+
+
+// $border-radius: 0
+
+// Badges
+
+// $badge-font-size:                   85% !default
+// $badge-font-weight:                 600
+// $badge-padding-y:                   .5em !default
+// $badge-padding-x:                   .5em !default
+//
+// .badge
+//   font-family: $font-family-sans-serif
+//
+//
+// .pagination, .btn.dropdown-toggle-split  border-left-color: rgba(255,255,255,.5)

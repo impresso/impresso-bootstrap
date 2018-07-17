@@ -1,0 +1,24 @@
+.results-header
+  display: flex
+  border: 1px solid $clr-quaternary
+  background: $clr-bg-secondary
+
+  .column
+    flex-grow: 0
+    height: 100%
+    padding: 0.8em
+
+  .column:not(:last-child)
+    border-right: 1px solid $clr-quaternary
+
+  .column:last-child
+    flex-grow: 2
+    text-align: right
+
+  .form-group,
+  .label
+    display: inline-block
+    margin: 0
+
+  .label
+    margin-right: 1em
