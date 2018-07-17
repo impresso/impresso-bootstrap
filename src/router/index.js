@@ -1,10 +1,17 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+<<<<<<< HEAD
 import Home from '@/components/Home';
+=======
+// import Home from '@/components/Home';
+import FilterBox from '@/components/custom/Filterbox';
+import CustomSlider from '@/components/custom/Slider';
+>>>>>>> 963ebd6931dcc2d5bee2482620bb17a5e1b7ff33
 import ComponentsAlerts from '@/components/components/Alerts';
 import ComponentsBadge from '@/components/components/Badge';
 import ComponentsCollapse from '@/components/components/Collapse';
 import ContentTypography from '@/components/content/Typography';
+import Overview from '@/components/Overview';
 
 Vue.use(Router);
 
@@ -13,12 +20,21 @@ export default new Router({
   routes: [
     {
       path: '/',
+<<<<<<< HEAD
       redirect: '/home',
     },
     {
       path: '/home',
 //      redirect: '/home',
       component: Home,
+=======
+      redirect: '/overview',
+      component: Overview,
+    },
+    {
+      path: '/overview',
+      component: Overview,
+>>>>>>> 963ebd6931dcc2d5bee2482620bb17a5e1b7ff33
     },
     {
       path: '/layout/grid',
@@ -47,6 +63,16 @@ export default new Router({
     {
       path: '/content/figures',
       // component: ContentFigures,
+    },
+    {
+      path: '/custom/filterbox',
+      component: FilterBox,
+      name: 'FilterBox',
+    },
+    {
+      path: '/custom/slider',
+      component: CustomSlider,
+      name: 'CustomSlider',
     },
     {
       path: '/components/alerts',
