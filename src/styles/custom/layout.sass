@@ -1,17 +1,18 @@
-.results-header
+.flexbox
   display: flex
-  border: 1px solid $clr-quaternary
   background: $clr-bg-secondary
 
-  .column
-    flex-grow: 0
-    height: 100%
-    padding: 0.8em
+  &.--border
+    border: 1px solid $clr-quaternary
 
-  .column:not(:last-child)
+  &.--border &-column:not(:last-child)
     border-right: 1px solid $clr-quaternary
 
-  .column:last-child
+  &-column
+    flex-grow: 0
+    padding: 1em
+
+  &-column:last-child
     flex-grow: 2
     text-align: right
 
@@ -22,3 +23,39 @@
 
   .label
     margin-right: 1em
+
+  .btn-sm
+    white-space: nowrap
+
+
+
+
+.l-submarine
+  display: flex
+  align-items: center
+  justify-content: space-around
+  background: #FFEB78
+  &-column
+    padding: 0.8em
+
+.g-ball
+  flex-grow: 0
+  align-self: flex-start
+  position: relative
+  width: 2em
+  div
+    position: absolute
+    top: 0
+    left: 50%
+    width: 1px
+    height: 25px
+    background: $clr-primary
+    &::after
+      content: ''
+      position: absolute
+      top: 25px
+      left: calc( 50% - 5.5px)
+      width: 11px
+      height: 11px
+      background: $clr-primary
+      border-radius: 50%

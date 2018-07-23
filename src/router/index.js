@@ -2,7 +2,8 @@ import Vue from 'vue';
 import Router from 'vue-router';
 // import Home from '@/components/Home';
 import FilterBox from '@/components/custom/Filterbox';
-import CustomSlider from '@/components/custom/Slider';
+import RangeSlider from '@/components/custom/Slider';
+import ZoomSlider from '@/components/custom/ZoomSlider';
 import ComponentsAlerts from '@/components/components/Alerts';
 import ComponentsBadge from '@/components/components/Badge';
 import ComponentsCollapse from '@/components/components/Collapse';
@@ -57,9 +58,14 @@ export default new Router({
     name: 'FilterBox',
   },
   {
-    path: '/custom/slider',
-    component: CustomSlider,
-    name: 'CustomSlider',
+    path: '/custom/rangeslider',
+    component: RangeSlider,
+    name: 'RangeSlider',
+  },
+  {
+    path: '/custom/zoomslider',
+    component: ZoomSlider,
+    name: 'ZoomSlider',
   },
   {
     path: '/components/alerts',

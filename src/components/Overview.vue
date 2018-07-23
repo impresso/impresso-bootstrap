@@ -3,10 +3,6 @@
 
     <section>
     <h6>Input fields</h6>
-      <vue-slider
-        v-bind:min="1750"
-        v-bind:max="2000"
-        v-bind:value="[1800,1900]"></vue-slider>
       <b-row>
         <b-col>
             <b-form-group label="Input with value">
@@ -136,7 +132,13 @@
             label="Range slider:"
             label-class="text-sm-right"
             label-for="rangeS">
-            <b-form-input type="range" id="rangeS" />
+            <vue-slider
+              id="rangeS"
+              v-bind:min="1750"
+              v-bind:max="2000"
+              v-bind:height="8"
+              v-bind:dotSize="8"
+              v-bind:value="[1800,1880]"></vue-slider>
           </b-form-group>
           <b-form-group
             horizontal

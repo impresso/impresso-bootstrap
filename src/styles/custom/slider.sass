@@ -1,13 +1,46 @@
 .vue-slider-component .vue-slider-dot
-  background-color: $black
-  border: 0.16em solid $white
+  background-color: $clr-quaternary
+  border: 1px solid $clr-primary
   box-shadow: none !important
 
+.vue-slider-component .vue-slider-dot:before
+  content: ''
+  display: block
+  margin-left: -12px
+  margin-top: -12px
+  width: 30px
+  height: 30px
+  border-radius: 50%
+  opacity: 0.1
+  background-color: $clr-quaternary
+  border: 1px solid $clr-primary
+
+.vue-slider-component .vue-slider-horizontal .vue-slider::before
+  content: ''
+  display: block
+  margin-left: -12px
+  margin-top: -12px
+  width: 30px
+  height: 30px
+  border-radius: 50%
+  opacity: 0.1
+  background-color: $clr-quaternary
+  border: 1px solid $clr-primary
+
 .vue-slider-component .vue-slider-process
-  background-color: $primary
+  background-color: $clr-accent
 
 .vue-slider-component .vue-slider-tooltip
-  border-color: $clr-primary
-  background-color: $clr-bg-primary
-  color: $clr-primary
+  border-color: $clr-secondary
+  background-color: $clr-secondary
+  color: $clr-bg-primary
   border-radius: 0
+
+.vue-slider-component .vue-slider-piecewise-item
+    // margin-left: calc( 1px - 1em )
+    margin-top: 0
+    padding: 0
+    // border-radius: 0
+    background: $clr-quaternary
+    width: 0.5em !important
+    height: 1px !important

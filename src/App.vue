@@ -51,7 +51,10 @@
             <router-link class="nav-link" v-bind:to="{name: 'FilterBox'}">Filterbox</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" v-bind:to="{name: 'CustomSlider'}">Slider</router-link>
+            <router-link class="nav-link" v-bind:to="{name: 'RangeSlider'}">Range Slider</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" v-bind:to="{name: 'ZoomSlider'}">ZoomSlider</router-link>
           </li>
         </ul>
         <h4>Components</h4>
