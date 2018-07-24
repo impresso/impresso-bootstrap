@@ -5,6 +5,7 @@ import FilterBox from '@/components/custom/Filterbox';
 import RangeSlider from '@/components/custom/Slider';
 import ZoomSlider from '@/components/custom/ZoomSlider';
 import ComponentsAlerts from '@/components/components/Alerts';
+import ComponentsNavs from '@/components/components/Navs';
 import ComponentsBadge from '@/components/components/Badge';
 import ComponentsCollapse from '@/components/components/Collapse';
 import ContentTypography from '@/components/content/Typography';
@@ -125,7 +126,7 @@ export default new Router({
   },
   {
     path: '/components/navs',
-      // component: ComponentsNavs,
+    component: ComponentsNavs,
   },
   {
     path: '/components/navbar',

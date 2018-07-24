@@ -1,0 +1,73 @@
+//
+// buttons
+//
+.btn-secondary
+  color: $clr-primary
+  border-color: $clr-tertiary
+  background-color: $clr-bg-primary
+  @extend %text-small-caps
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):hover
+  color: $clr-bg-primary
+  background-color: $clr-primary
+  border-color: $clr-primary
+.btn-sm
+  @extend %text-small-caps
+  padding: 0.1em 0.6em
+.btn
+  margin: 0
+
+//
+// forms
+//
+.form-control
+  font-style: italic
+
+.form-control:focus
+  border-color: $clr-primary
+
+.custom-select:focus
+  border-color: $clr-primary
+  box-shadow: none
+
+//
+// tabs
+//
+.nav-tabs .nav-link,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.disabled
+  @extend %text-small-caps
+
+.nav-tabs .nav-link
+  color: $clr-tertiary
+
+.nav-tabs .nav-link.disabled
+  color: $clr-quaternary
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus
+  color: $clr-primary
+
+.nav-tabs li.nav-item:first-child
+  margin-left: 1em
+
+.tabs-right
+  // float: right
+  position: absolute
+  right: 0
+  margin-right: 2.5em
+  margin-top: 1em
+
+
+
+//
+// Search suggestions
+//
+.suggestions
+  border: 1px solid $clr-primary
+  border-top: 0
+  background-color: $clr-bg-primary
+  .suggestion
+    background: green
+    &.selected
+      background: red

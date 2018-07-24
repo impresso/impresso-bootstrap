@@ -13,7 +13,7 @@
           :max="100"
           :piecewise=false
           :piecewiseLabel=false
-          interval="10",
+          :interval="10",
           tooltip="hover"
           formatter="ZOOM {value} %"
           :width="1"
