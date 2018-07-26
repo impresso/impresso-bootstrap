@@ -97,6 +97,53 @@
   </div>
 
   <br>
+  <h5>Navbar-tools <code>&lt;b-navbar variant="tools"&gt;</code></h5>
+
+
+  <b-navbar toggleable="sm" variant="tools" class="border-top border-bottom">
+
+    <b-collapse is-nav>
+
+      <b-navbar-nav><b-form-group>
+        <b-nav-item href="#">Link</b-nav-item>
+        <b-nav-item href="#" disabled>Disabled</b-nav-item>
+      </b-form-group></b-navbar-nav>
+
+      <!-- Right aligned nav items -->
+      <b-navbar-nav>
+        <label for="radios0" class="label">Group by</label>
+        <b-form-radio-group size="sm" buttons id="radios0" name="sad">
+          <b-form-radio value="list">Issue</b-form-radio>
+          <b-form-radio value="page">Page</b-form-radio>
+          <b-form-radio value="art">Article</b-form-radio>
+        </b-form-radio-group>
+      </b-navbar-nav>
+
+      <b-navbar-nav>
+        <label for="ddown1" class="label">Order By</label>
+        <b-form-group>
+          <b-dropdown id="ddown1" text="Relevance" size="sm">
+            <b-dropdown-item>fsdad</b-dropdown-item>
+            <b-dropdown-item>dfasdf</b-dropdown-item>
+            <b-dropdown-divider>sdfdfsdf fdsf</b-dropdown-divider>
+            <b-dropdown-item>dsf adfdfdf</b-dropdown-item>
+          </b-dropdown>
+        </b-form-group>
+      </b-navbar-nav>
+
+      <b-navbar-nav class="ml-auto">
+        <label for="radios2" class="label">Display as</label>
+        <b-form-radio-group size="sm" buttons id="radios2" name="radioSubComponent">
+          <b-form-radio value="list">List</b-form-radio>
+          <b-form-radio value="tiles">Tiles</b-form-radio>
+        </b-form-radio-group>
+      </b-navbar-nav>
+
+    </b-collapse>
+  </b-navbar>
+
+
+  <br>
 
   <br>
   <h5>Class <code>.l-submarine</code></h5>

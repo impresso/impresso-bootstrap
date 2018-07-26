@@ -32,10 +32,17 @@
             </div>
           </div>
 
+          <!-- Using components -->
+<b-input-group prepend="Username">
+  <b-form-input></b-form-input>
+    <b-btn variant="outline-primary">Button</b-btn>
+</b-input-group>
+
+
           <b-form-group description="Try dates and locations" label="Empty form input">
             <b-form-input placeholder="Search for ..."></b-form-input>
             <div class="suggestions">
-              <b-media left-align vertical-align="center">
+              <b-media left-align vertical-align="center" class="suggestion">
                 <b-img slot="aside" blank blank-color="orange" width="40" alt="placeholder" />
                 <b class="mt-0 mb-1">Search Result Title</b>
                 <br>
@@ -45,7 +52,7 @@
                   <b-button size="sm">R</b-button>
                 </div>
               </b-media>
-              <b-media left-align vertical-align="center">
+              <b-media left-align vertical-align="center" class="suggestion">
                 <b-img slot="aside" blank blank-color="orange" width="40" alt="placeholder" />
                 <b class="mt-0 mb-1">Search Result Title</b>
                 <br>
@@ -55,7 +62,7 @@
                   <b-button size="sm">R</b-button>
                 </div>
               </b-media>
-              <b-media left-align vertical-align="center">
+              <b-media left-align vertical-align="center" class="suggestion">
                 <b-img slot="aside" blank blank-color="orange" width="40" alt="placeholder" />
                 <b class="mt-0 mb-1">Search Result Title</b>
                 <br>

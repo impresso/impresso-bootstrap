@@ -4,15 +4,16 @@
     <h2>1. DateRange slider</h2>
     <br>
     <vue-slider v-bind:min="1750" v-bind:max="1950" height="1" v-bind:dotSize="8" v-model="dateRange"></vue-slider>
+    <br>
     <b-row>
       <b-col>
-          <b-form-group label="Start Year">
-            <b-form-input v-model:value="dateRange[0]" type="number"></b-form-input>
+          <b-form-group label="Start">
+            <b-form-input v-model:value="dateRange[0]" type="date"></b-form-input>
           </b-form-group>
         </b-col>
         <b-col>
-          <b-form-group label="End Year">
-            <b-form-input v-model:value="dateRange[1]" type="number"></b-form-input>
+          <b-form-group label="End">
+            <b-form-input v-model:value="dateRange[1]" type="date"></b-form-input>
           </b-form-group>
       </b-col>
     </b-row>
