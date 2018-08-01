@@ -48,6 +48,12 @@
         <h4>Custom Components</h4>
         <ul class="nav nav-pills flex-column">
           <li class="nav-item">
+            <router-link class="nav-link" v-bind:to="{name: 'Forms'}">Forms</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" v-bind:to="{name: 'Tabs'}">Tabs</router-link>
+          </li>
+          <li class="nav-item">
             <router-link class="nav-link" v-bind:to="{name: 'FilterBox'}">Filterbox</router-link>
           </li>
           <li class="nav-item">

@@ -7,7 +7,7 @@
 #TheHeader
   border-top: 2px solid $clr-accent
   margin-bottom: 2px
-
+a
 .bg-dark
   background-color: $clr-primary !important
 
@@ -76,10 +76,21 @@
 //
 // Search suggestions
 //
+input + .suggestions
+  display: none
+input:focus + .suggestions,
+.suggestions:hover
+  display: block
+
 .suggestions
+  position: absolute
+  z-index: 1
+  cursor: pointer
   border: 1px solid $clr-primary
-  border-top: 0
+  // border-top: 0
+  margin-top: -1px
   background-color: $clr-bg-primary
+  box-shadow: 0 0.2rem 0.2rem rgba($clr-primary, 0.2)
   .suggestion
     padding: 1em
     &:hover
@@ -87,3 +98,11 @@
     &:active,
     &.selected
       background-color: $clr-accent-secondary
+    .suggestion-results
+      float: right
+      display: block
+      width: 5rem
+      height: 100%
+      text-align: right
+  .suggestion:not(:last-child)
+      border-bottom: 1px dashed rgba($clr-primary, 0.1)

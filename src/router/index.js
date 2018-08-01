@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 // import Home from '@/components/Home';
+import Forms from '@/components/custom/Forms';
+import Tabs from '@/components/custom/Tabs';
 import FilterBox from '@/components/custom/Filterbox';
 import RangeSlider from '@/components/custom/Slider';
 import ZoomSlider from '@/components/custom/ZoomSlider';
@@ -52,6 +54,16 @@ export default new Router({
   {
     path: '/content/figures',
       // component: ContentFigures,
+  },
+  {
+    path: '/custom/forms',
+    component: Forms,
+    name: 'Forms',
+  },
+  {
+    path: '/custom/tabs',
+    component: Tabs,
+    name: 'Tabs',
   },
   {
     path: '/custom/filterbox',
