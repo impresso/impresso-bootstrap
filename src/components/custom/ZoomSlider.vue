@@ -9,17 +9,17 @@
       </b-col>
       <b-col>
         <vue-slider v-model="zoomLevel"
-          :min="20"
-          :max="100"
-          :piecewise=false
+          :min=20
+          :max=100
+          :piecewise=true
           :piecewiseLabel=false
-          :interval="10",
-          tooltip="hover"
+          :interval=20
+          tooltip=hover
           formatter="ZOOM {value} %"
-          :width="1"
-          :height="200"
-          :dotSize="8"
-          direction="vertical">
+          :width=1
+          :height=200
+          :dotSize=8
+          direction=vertical>
         </vue-slider>
       </b-col>
     </b-row>
@@ -37,10 +37,6 @@ export default {
   data() {
     return {
       zoomLevel: 50,
-      // data: [
-      //   "Fit Page",
-      //   "1:1",
-      // ],
     };
   },
 };

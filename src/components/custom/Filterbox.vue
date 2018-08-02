@@ -44,9 +44,8 @@
   <div class="filterbox">
     <div class="box-header">
       <div class="box-title"><h4>fancy filter</h4></div>
-      <div class="remove" v-on:click="closeBox" />
-      <div class="contextmenu">
-      </div>
+      <div class="contextmenu" v-on:click="closeBox">9</div>
+      <div class="contextmenu">&#xe052;</div>
     </div>
     <div class="clearfix"></div>
     <div class="box-body m-2">

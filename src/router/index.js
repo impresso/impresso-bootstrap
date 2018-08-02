@@ -11,6 +11,7 @@ import ComponentsNavs from '@/components/components/Navs';
 import ComponentsBadge from '@/components/components/Badge';
 import ComponentsCollapse from '@/components/components/Collapse';
 import ContentTypography from '@/components/content/Typography';
+import ContentIcons from '@/components/content/Icons';
 import Overview from '@/components/Overview';
 import LayoutGrid from '@/components/layout/Grid';
 
@@ -38,6 +39,10 @@ export default new Router({
   {
     path: '/content/typography',
     component: ContentTypography,
+  },
+  {
+    path: '/content/icons',
+    component: ContentIcons,
   },
   {
     path: '/content/code',

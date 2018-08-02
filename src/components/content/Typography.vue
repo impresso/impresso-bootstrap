@@ -1,6 +1,7 @@
 <template lang="html">
   <div class="documentation">
     <h1>Typography</h1>
+
     <p class="">We are using two font families throughout the interface:</p>
     <ul>
       <li>The Base font is a Sans Serif : <em>Source Sans Pro</em>. It can be explicitely applied with the <code>.sans</code> class.</li>
@@ -46,7 +47,7 @@
       <code>.heading-top</code> class is used above headers and for module titles.
     </div>
     <h5>h5 is used for friendly search result titles.
-      Found 153 pages <u>matching exactly “Indoeuropean”</u>
+      Found 153 pages <u>matching exactly “<b>Indoeuropean</b>”</u>
       <u>next to “people”</u> published in La Gazette de Lausanne
       <u>between <b>19 May 1810</b> and <b>01 Jan 1835</b></u> or between 20 March 1861 and 30 March March 1861 </h5>
     <div class="">

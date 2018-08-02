@@ -12,13 +12,23 @@ a
   background-color: $clr-primary !important
 
 //
+// Badges
+//
+.badge
+  @extend %text-small-caps
+  box-sizing: border-box
+  border: 1px solid rgba(0,0,0,0.2)
+
+//
 // buttons
 //
+.btn
+  @extend %text-small-caps
+
 .btn-secondary
   color: $clr-primary
   border-color: $clr-tertiary
   background-color: $clr-bg-primary
-  @extend %text-small-caps
 
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):hover
