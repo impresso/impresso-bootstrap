@@ -26,13 +26,17 @@ h6.dropdown-header
   @extend %text-small-caps
   margin-right: 1em
 
-.dropdown-toggle:after
+.dropdown-toggle::after
   font-family: dripicons-v2
   content: 'T'
   margin-left: 0.6em
   margin-right: 0.6em
   border: none
   vertical-align: text-top
-  // border-color: transparent
+  transition: 0.2s
+
 .dropdown-toggle-split:after
   margin-left: 0
+
+.dropdown-toggle:hover::after
+  margin-top: 0.2em
