@@ -38,6 +38,9 @@
         <h4>Custom Components</h4>
         <ul class="nav nav-pills flex-column">
           <li class="nav-item">
+            <router-link class="nav-link" v-bind:to="{name: 'Filters'}">Filters</router-link>
+          </li>
+          <li class="nav-item">
             <router-link class="nav-link" v-bind:to="{name: 'Forms'}">Forms</router-link>
           </li>
           <li class="nav-item">
@@ -136,10 +139,10 @@
 // import Icon from 'vue-awesome/components/Icon';
 
 export default {
-//   name: 'app',
-//   components: {
-//     Icon,
-//   },
+  //   name: 'app',
+  //   components: {
+  //     Icon,
+  //   },
 };
 </script>
 
@@ -155,37 +158,37 @@ export default {
         mix-blend-mode: multiply;
     }
 
-    .navbar-brand{
-      $darkicon: rgba(0,0,0,.8);
+    .navbar-brand {
+        $darkicon: rgba(0,0,0,.8);
 
-      a{
-        border: 2px solid $darkicon;
-        transition: all 300ms;
-        margin-right: 7px;
-        width: 30px;
-        height: 30px;
-        display: inline-block;
-        background: $darkicon;
-        border-radius: 20px;
-        text-align: center;
-        line-height: 1;
-        padding-top: 2px;
-        color:white;
-        &:hover{
-          background: none;
-          color: $darkicon;
-          text-decoration: none
+        a {
+            border: 2px solid $darkicon;
+            transition: all 300ms;
+            margin-right: 7px;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            background: $darkicon;
+            border-radius: 20px;
+            text-align: center;
+            line-height: 1;
+            padding-top: 2px;
+            color: white;
+            &:hover {
+                background: none;
+                color: $darkicon;
+                text-decoration: none;
+            }
+            svg {
+                margin-top: 20%;
+                width: 100%;
+            }
+            &.fa-github {
+                svg {
+                    transform: scale(1.5);
+                }
+            }
         }
-        svg{
-          margin-top: 20%;
-          width: 100%;
-        }
-        &.fa-github{
-          svg{
-            transform: scale(1.5);
-          }
-        }
-      }
     }
 }
 </style>

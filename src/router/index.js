@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 // import Home from '@/components/Home';
+import Filters from '@/components/components/Filters';
 import Forms from '@/components/custom/Forms';
 import Tabs from '@/components/custom/Tabs';
 import FilterBox from '@/components/custom/Filterbox';
@@ -59,6 +60,11 @@ export default new Router({
   {
     path: '/content/figures',
       // component: ContentFigures,
+  },
+  {
+    path: '/custom/filters',
+    component: Filters,
+    name: 'Filters',
   },
   {
     path: '/custom/forms',
