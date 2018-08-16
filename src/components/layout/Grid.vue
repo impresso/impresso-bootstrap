@@ -157,7 +157,7 @@
       <div>La Gazette de Lausanne - Lundi 16 Mai 2018</div>
     </a>
 
-    <div class="g-ball" style="">
+    <div class="l-submarine-periscope" style="">
       <div></div>
     </div>
 
@@ -179,8 +179,7 @@
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style lang="scss">
